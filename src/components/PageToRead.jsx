@@ -4,6 +4,7 @@ import "react-tabs/style/react-tabs.css";
 import ReadList from "./ReadList";
 import { useLoaderData } from "react-router";
 import { findBookToLS } from "./addLocalStorage/addBooksToLS";
+import { Helmet } from "react-helmet-async";
 const PageToRead = () => {
   const [bookIdFromLB, setBookIdFromLB] = useState([]);
 
@@ -20,6 +21,9 @@ const PageToRead = () => {
 
   return (
     <div className="min-h-[calc(100vh-140px)]">
+      <Helmet>
+        <title> page-to-read | Story-Corner</title>
+      </Helmet>
       <Tabs className="my-7">
         <TabList>
           <Tab>Read Books</Tab>

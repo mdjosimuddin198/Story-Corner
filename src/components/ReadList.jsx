@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { findBookToLS } from "./addLocalStorage/addBooksToLS";
 
 const ReadList = ({ book, bookIdFromLB, setBookIdFromLB }) => {
@@ -38,6 +39,9 @@ const ReadList = ({ book, bookIdFromLB, setBookIdFromLB }) => {
   };
   return (
     <>
+      <Helmet>
+        <title> read-list | Story-Corner</title>
+      </Helmet>
       <div className="hero  ">
         <div className="hero-content  flex-col items-center justify-center lg:flex-row">
           <div className=" p-8 rounded-md bg-[#f3f3f3]">

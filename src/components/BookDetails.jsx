@@ -33,6 +33,9 @@ const BookDetails = () => {
   // console.log(tags);
   return (
     <div>
+      <Helmet>
+        <title> {bookName} details| Story-Corner</title>
+      </Helmet>
       <div className="hero  min-h-screen">
         <div className="hero-content  flex-col items-center justify-center lg:flex-row">
           <div className="md:w-[35%]   p-8 rounded-md bg-[#f3f3f3]">
