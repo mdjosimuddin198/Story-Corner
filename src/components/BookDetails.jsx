@@ -2,7 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import Book from "./Book";
 import { setBookToLS } from "./addLocalStorage/addBooksToLS";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const BookDetails = () => {
   const [bookInfos, setBookInfo] = useState({});
