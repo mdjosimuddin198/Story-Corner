@@ -2,7 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import Book from "./Book";
 import { setBookToLS } from "./addLocalStorage/addBooksToLS";
-// import "./addLocalStorage/setBookToLS";
+import { Helmet } from "react-helmet";
 
 const BookDetails = () => {
   const [bookInfos, setBookInfo] = useState({});
@@ -34,7 +34,7 @@ const BookDetails = () => {
   return (
     <div>
       <Helmet>
-        <title> {bookName} details| Story-Corner</title>
+        <title> details| Story-Corner</title>
       </Helmet>
       <div className="hero  min-h-screen">
         <div className="hero-content  flex-col items-center justify-center lg:flex-row">
